@@ -1,0 +1,33 @@
+clamp():
+A função clamp() do CSS é uma forma de fazer calculos e complementa as funções min() e max() trazendo um 
+valor adicional a ser passado, que seria o valor preferido, ou podemos chamar de "entretando".
+Ele aceita 3 parametros, que seria o valor minimo para a propriedade, o valor preferido/entretando e o 
+maximo.
+
+Clamp() é uma função que ajuda muito a criar responsividade na sua aplicação, pelo fato do valor central
+poder ser um valor mutavel, tendo a sua esquerda um valor minimo a atingir e a direita um valor maximo.
+Em algum nível ainda é necessário você entender o calculo que está fazendo para chegar naquele tamanho,
+mas por ter os tamanhos maximos e minimos, é mais fácil trabalhar "no chute" sem quebrar a aplicação,
+mesmo que não tenha o tamanho desejado.
+
+Um dos usos mais comuns que vejo é para font-size, então vou usar como exemplo:
+Vamos pensar em uma aplicação onde o font-size da raiz é 16px, para trabalharmos com rem. Se tivermos
+font-size: clamp(1.5rem, 5vw, 5rem);
+significa que a font-size desse elemento deve ter no minimo 1.5rem (24px), no maximo 5rem(80px), entretanto,
+no meio termo, ele não pode passar de 5vw, ou seja, 5% da largura do viewport.
+Com isso, o que o clamp faz é, enquanto não atingir o minimo ou maximo, ele vai se basear no tamanho do 
+viewport dividido por 20.
+Em uma tela de 1440px, isso seria 72px, e conforme o viewport vai diminuindo, a font diminui junto, pois
+ele estará sempre fazendo o calculo.
+
+Com isso, temos uma font responsiva.
+
+O uso do entretanto só funciona com unidades não absolutas, ou seja %, vw, vh, e afins. O uso de uma
+unidade absoluta como px, em, rem não surte efeito pois não há calculo a ser feito.
+
+A porcentagem também só funciona para propriedades que mudam de tamanho, como por exemplo o width.
+Pensamos em uma imagem com o seguinte CSS:
+width: clamp(400px, 50%, 1000px)
+
+Com isso, estamos dizendo que a imagem deve ter no minimo 400px, no maximo 1000px, entretando entre esses
+valores, deve ser metade do width do elemento pai dessa imagem.

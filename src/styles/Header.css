@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: var(--main-color);
+}
+
+.header__title {
+  font-size: clamp(1.5rem, 5vw, 5rem);
+  font-weight: bold;
+  color: whitesmoke;
+  text-align: center;
+  align-self: center;
+  padding: 40px;
+}
+
+.header__picture {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.header__image {
+  width: 700px;
+  height: auto;
+}
+
+@media (orientation: landscape) {
+  .header {
+    position: relative;
+  }
+
+  .header__title {
+    text-align: start;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
