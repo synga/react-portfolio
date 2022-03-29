@@ -31,3 +31,6 @@ width: clamp(400px, 50%, 1000px)
 
 Com isso, estamos dizendo que a imagem deve ter no minimo 400px, no maximo 1000px, entretando entre esses
 valores, deve ser metade do width do elemento pai dessa imagem.
+
+================================
+

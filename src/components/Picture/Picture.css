@@ -1,0 +1,17 @@
+.picture {
+  display: flex;
+  align-items: flex-end;
+}
+
+.picture--left {
+  justify-content: flex-start;
+}
+
+.picture--right {
+  justify-content: flex-end;
+}
+
+.picture__image {
+  width: clamp(500px, 65%, 1000px);
+  height: auto;
+}

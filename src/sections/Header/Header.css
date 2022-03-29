@@ -16,17 +16,6 @@
   padding: 40px;
 }
 
-.header__picture {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.header__image {
-  width: 700px;
-  height: auto;
-}
-
 @media (orientation: landscape) {
   .header {
     position: relative;
