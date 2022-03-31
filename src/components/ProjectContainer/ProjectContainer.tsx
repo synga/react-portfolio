@@ -20,18 +20,28 @@ const createPictureElement = (image: string, name: string) => {
     png: image,
   };
 
-  return <Picture images={images} alt={name} />;
+  const modifiers = {
+    imageWidth: 'full',
+  };
+
+  return <Picture images={images} alt={name} modifiers={modifiers} />;
 };
 
 function ProjectContainer(props: { project: ProjectInterface }) {
-  console.log(props.project);
   return (
-    <aside className="project">
+    <aside
+      className={
+        'project' +
+        (props.project.ordem % 2 === 0 ? ' project--right' : ' project--left')
+      }
+    >
       <h3 className="project__title">{props.project.nome}</h3>
       <div className="project__picture">
         {createPictureElement(props.project.foto, props.project.nome)}
       </div>
-      <ProjectInfo {...props.project} />
+      <div className="project__info">
+        <ProjectInfo {...props.project} />
+      </div>
       <div className="project__links">
         {props.project.links && createLinkElements(props.project.links)}
       </div>

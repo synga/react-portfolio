@@ -11,7 +11,7 @@ function Header() {
       <Picture
         alt="Um desenho meu, sentado em frente ao computador"
         images={Images.header}
-        className="right"
+        modifiers={{ position: 'right' }}
       />
     </section>
   );

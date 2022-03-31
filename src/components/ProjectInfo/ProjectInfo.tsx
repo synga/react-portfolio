@@ -4,11 +4,13 @@ import './ProjectInfo.css';
 
 function ProjectInfo(props: Partial<ProjectInterface>) {
   return (
-    <article>
-      <p>{props.ano}</p>
-      <p>{props.duracao}</p>
-      <p>{props.descricao}</p>
-      <p>{props.tecnologias}</p>
+    <article className="info">
+      <p className="info__year">{props.ano}</p>
+      <p className="info__duration">{props.duracao}</p>
+      <p className="info__description">{props.descricao}</p>
+      <p className="info__tecnologies">
+        <strong>Tecnologias:</strong> {props.tecnologias}
+      </p>
     </article>
   );
 }

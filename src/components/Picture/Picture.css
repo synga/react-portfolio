@@ -12,6 +12,11 @@
 }
 
 .picture__image {
-  width: clamp(500px, 65%, 1000px);
+  width: clamp(500px, 65%, 100%);
+  height: auto;
+}
+
+.picture__image--full {
+  width: 100%;
   height: auto;
 }

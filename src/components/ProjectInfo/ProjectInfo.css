@@ -1,0 +1,8 @@
+.info {
+  display: grid;
+  grid-template: 40px auto 40px / 1fr 1fr;
+}
+
+.info__description {
+  grid-column: span 2;
+}

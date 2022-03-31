@@ -5,5 +5,8 @@ export interface PictureInterface {
     png: string;
   };
   alt: string;
-  className?: string;
+  modifiers?: {
+    position?: string;
+    imageWidth?: string;
+  };
 }
