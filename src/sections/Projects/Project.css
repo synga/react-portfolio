@@ -1,4 +1,12 @@
-h2 {
+.projects {
+  padding: var(--padding-md);
+}
+
+.projects::before {
+  content: '';
+}
+
+.projects__title {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;

@@ -1,0 +1,27 @@
+.about {
+  padding: var(--padding-md);
+  position: relative;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-right: 0 solid transparent;
+  border-left: 100vw solid transparent;
+  border-top: 40vh solid var(--main-color);
+}
+
+.about__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about__text {
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.3rem;
+}

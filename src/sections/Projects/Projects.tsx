@@ -15,8 +15,8 @@ const createProjectElements = (projects: ProjectInterface[]) => {
 
 function Projects(props: { projects: ProjectInterface[] }) {
   return (
-    <section>
-      <h2>Veja no que já trabalhei!</h2>
+    <section className="projects">
+      <h2 className="projects__title">Veja no que já trabalhei!</h2>
       {createProjectElements(props.projects)}
     </section>
   );

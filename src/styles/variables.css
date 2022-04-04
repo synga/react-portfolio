@@ -1,3 +1,11 @@
 :root {
+  /* 
+    Cores
+  */
   --main-color: #18b4cc;
+
+  /* 
+    Padding
+  */
+  --padding-md: 20px 40px; 
 }
