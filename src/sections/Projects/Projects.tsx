@@ -2,6 +2,8 @@ import React from 'react';
 import { ProjectInterface } from './Project.interface';
 import ProjectContainer from '../../components/ProjectContainer/ProjectContainer';
 
+import './Project.css';
+
 /**
  * Itera um array de projetos e devolve os componentes
  */
