@@ -4,7 +4,7 @@ import './Link.css';
 
 function Link(props: { link: LinkInterface }) {
   return (
-    <a href={props.link.link} target="_blank" rel="noreferrer">
+    <a className="link" href={props.link.link} target="_blank" rel="noreferrer">
       {props.link.nome}
     </a>
   );

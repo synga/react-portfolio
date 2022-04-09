@@ -1,0 +1,17 @@
+.link {
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  border: 3px solid var(--main-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .link {
+    min-width: 140px;
+    letter-spacing: 2px;
+  }
+}

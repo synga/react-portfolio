@@ -14,14 +14,18 @@
   border-top: 40vh solid var(--main-color);
 }
 
-.about__title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
 .about__text {
   font-weight: 400;
   text-align: center;
   font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: var(--padding-sm);
+  }
+
+  .about__text {
+    font-size: 1rem;
+  }
 }

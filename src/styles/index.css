@@ -8,9 +8,16 @@ html,
 body,
 #root {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Open Sans', Roboto, sans-serif;
   color: #222222;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }

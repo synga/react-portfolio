@@ -4,7 +4,6 @@ import Header from './sections/Header/Header';
 import About from './sections/About/About';
 import Projects from './sections/Projects/Projects';
 import Contact from './sections/Contact/Contact';
-import Footer from './sections/Footer/Footer';
 
 class App extends Component {
   state = {
@@ -31,9 +30,8 @@ class App extends Component {
       <main>
         <Header />
         <About />
-        {this.state.projects && <Projects projects={this.state.projects} />}
         <Contact />
-        <Footer />
+        {this.state.projects && <Projects projects={this.state.projects} />}
       </main>
     );
   }

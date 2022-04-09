@@ -7,5 +7,6 @@
   /* 
     Padding
   */
-  --padding-md: 20px 40px; 
+  --padding-md: 20px 40px;
+  --padding-sm: 24px;
 }
