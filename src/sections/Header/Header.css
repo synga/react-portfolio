@@ -9,11 +9,17 @@
 
 .header__title {
   font-size: clamp(2rem, 5vw, 5rem);
+  line-height: 2.5rem;
   font-weight: bold;
   color: whitesmoke;
   text-align: center;
   align-self: center;
   padding: 40px;
+}
+
+.header__title small {
+  font-size: 60%;
+  margin-left: 5px;
 }
 
 @media (orientation: landscape) {
